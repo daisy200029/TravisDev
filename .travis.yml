@@ -7,7 +7,7 @@ matrix:
       script:
         - python pythontest.py
 
-    - language: java
+    - language: generic
       before_script:
         - cd java
       script:
