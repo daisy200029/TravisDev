@@ -11,4 +11,4 @@ matrix:
       before_script:
         - cd java
       script:
-        - mvn clean 
+        - javac HelloWorld.java
