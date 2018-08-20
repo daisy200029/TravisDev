@@ -8,7 +8,5 @@ matrix:
         - python pythontest.py
 
     - language: java
-      before_script:
-        - cd java
-      script:
-        - mvn install -DskipTests=true -Dmaven.javadoc.skip=true
+      sudo: false
+      script: mvn clean verify
