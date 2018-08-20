@@ -5,10 +5,10 @@ matrix:
       before_script:
         - cd python
       script:
-        - python pythontest
+        - python pythontest.py
 
     - language: java
       before_script:
         - cd java
       script:
-        - javac HelloWorld.java
+        - mvn install -DskipTests=true -Dmaven.javadoc.skip=true
